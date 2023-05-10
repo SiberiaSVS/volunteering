@@ -1,0 +1,31 @@
+.contacts a:link, :visited {
+    color: #0078c9;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: #ff0000;
+}
+
+.event__delete-icon {
+    align-self: flex-start;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.add-button {
+    background-color: #0491aa;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 400px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.add-button:hover {
+    background-color: #047d92;
+}

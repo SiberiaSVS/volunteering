@@ -1,0 +1,89 @@
+.backlink:link, .backlink:visited {
+    color: #888;
+    text-decoration: none;
+}
+
+.backlink:hover {
+    color: #444;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 35rem;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 3 / 2;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.event-head {
+    display: flex;
+}
+
+.contacts {
+    margin-left: 100px;
+}
+
+.information__information-text {
+    display: flex;
+    align-items: center;
+}
+
+.information__information-text p {
+    margin-left: 15px;
+}
+
+.information__link:link, :visited {
+    color: #0078c9;
+    text-decoration: none;
+}
+
+.information__link:hover {
+    color: #ff0000;
+}
+
+.information, .contacts {
+    margin-top: 50px;
+}
+
+.description {
+    text-align: justify;
+}

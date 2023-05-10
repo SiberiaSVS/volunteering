@@ -1,0 +1,55 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ffffff;
+}
+
+input[type=file] {
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 300px;
+    height: 30px;
+}
+
+.file-wrapper {
+    margin: 10px;
+}
+
+::-webkit-file-upload-button {
+    color: white;
+    background: #0491aa;
+    padding: 5px;
+    border: none;
+    border-radius: 50px; 
+}
+
+::-webkit-file-upload-button:hover {
+    background: #047d92;
+}
+
+button[type=submit] {
+    background-color: #0491aa;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin: 50px 0;
+}
+
+button[type=submit]:hover {
+    background-color: #047d92;
+}
