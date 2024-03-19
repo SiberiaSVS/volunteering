@@ -21,8 +21,8 @@ public class EventService {
     private final EventRepository eventRepository;
     private final UserRepository userRepository;
     public List<Event> listEvents(String city){
-        if(city != null && city != "") return eventRepository.findByCity(city);
-        return eventRepository.findAll();
+        if(city != null && !city.isEmpty()) return eventRepository.findByCityOrderByIdDesc(city);
+        return eventRepository.findAllByOrderByIdDesc();
     }
 
     public void saveEvent(Principal principal, Event event, MultipartFile file1, MultipartFile file2, MultipartFile file3, MultipartFile file4, MultipartFile file5) throws IOException {
