@@ -63,7 +63,7 @@
                 <input type="submit" value="Ban">
             </form></td>
             <td><a href="/admin/user/edit/${user.id}">Редактирование</a></td>
-            <td>Подробная информация</td>
+            <td><a href="/user/${user.id}">Подробная информация</a></td>
             <td>
                 <form action="/admin/user/delete/${user.id}" method="post">
                     <input type="hidden" name="_csrf" value="${_csrf.token}">

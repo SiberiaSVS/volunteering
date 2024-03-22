@@ -36,7 +36,7 @@
         </ul>
     </nav>
 </header>
-<h1>Имя пользователя</h1>
+<h1>${user.name}</h1>
 <div class="contacts">
     <h3>Контакты</h3>
     <p>Телефон: <a href="tel:00000000000" class="information__link">${user.phoneNumber}</a></p>
